@@ -4,18 +4,18 @@
 class Halo < Formula
   desc "Local DNS and SSL management tool for development"
   homepage "https://github.com/freedomforeversolar/halo"
-  version "1.0.4"
+  version "1.0.5"
   license "MIT"
 
   # Different URLs for different architectures
   on_arm do
-    url "https://github.com/freedomforeversolar/halo/releases/download/v1.0.4/halo-darwin-arm64"
-    sha256 "520f5c0f683693a2e4af5f8ceb46c736339b90be2b31773b7f98a8b96391cdb5"
+    url "https://github.com/freedomforeversolar/halo/releases/download/v1.0.5/halo-darwin-arm64"
+    sha256 "f73195cbc03abf1d5367ee13bdc61908bc7303205ffe9829ccdd45d864fbfafa"
   end
 
   on_intel do
-    url "https://github.com/freedomforeversolar/halo/releases/download/v1.0.4/halo-darwin-x64"
-    sha256 "79b1da7ae3a7a112b636e3b5233b441ab6daa7f59a49387ae38a2b90b5b082bb"
+    url "https://github.com/freedomforeversolar/halo/releases/download/v1.0.5/halo-darwin-x64"
+    sha256 "0c96e8504dc07d88e67c5a3af5a7d0ef0cdca6749bb6be8cdf212bf61ae855ef"
   end
 
   depends_on "caddy"
@@ -43,6 +43,6 @@ class Halo < Formula
   end
 
   test do
-    assert_match "1.0.4", shell_output("#{bin}/halo --version")
+    assert_match "1.0.5", shell_output("#{bin}/halo --version")
   end
 end
