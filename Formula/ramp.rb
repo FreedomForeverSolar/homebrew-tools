@@ -5,21 +5,21 @@
 class Ramp < Formula
   desc "CLI tool for managing multi-repository development workflows using git worktrees"
   homepage "https://github.com/FreedomForeverSolar/ramp"
-  version "1.9.0"
+  version "1.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FreedomForeverSolar/ramp/releases/download/v1.9.0/ramp_1.9.0_Darwin_x86_64.tar.gz"
-      sha256 "64a12be1ad6525fbb0d0bb09274be3fff79d429ccd4a5c48859c7f3bd3af193a"
+      url "https://github.com/FreedomForeverSolar/ramp/releases/download/v1.9.1/ramp_1.9.1_Darwin_x86_64.tar.gz"
+      sha256 "13d7d094e4684f4425e3cd8dedfc5690e07688e8a987e18ad206b0668d5b980e"
 
       def install
         bin.install "ramp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FreedomForeverSolar/ramp/releases/download/v1.9.0/ramp_1.9.0_Darwin_arm64.tar.gz"
-      sha256 "cc550adf8f6f4184066ba27ba9f51c53c0a8f7143982cc0fe84343836ab59bf7"
+      url "https://github.com/FreedomForeverSolar/ramp/releases/download/v1.9.1/ramp_1.9.1_Darwin_arm64.tar.gz"
+      sha256 "d79b14efedd95ce8d28ace570b1f25b5e17818004c18656f8749f88aff57dd77"
 
       def install
         bin.install "ramp"
@@ -29,15 +29,15 @@ class Ramp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FreedomForeverSolar/ramp/releases/download/v1.9.0/ramp_1.9.0_Linux_x86_64.tar.gz"
-      sha256 "da3ce74f7861d1f56facd6ea0adb59f43ed9a29deb6f59b650ab99abbff73828"
+      url "https://github.com/FreedomForeverSolar/ramp/releases/download/v1.9.1/ramp_1.9.1_Linux_x86_64.tar.gz"
+      sha256 "5198abd0ce10486b034925a8959668c65896e4d76f168719895414a282177690"
       def install
         bin.install "ramp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FreedomForeverSolar/ramp/releases/download/v1.9.0/ramp_1.9.0_Linux_arm64.tar.gz"
-      sha256 "20e241223118e468102681dfa33324e674b36519f4d92a7f6adc35d3a94e2225"
+      url "https://github.com/FreedomForeverSolar/ramp/releases/download/v1.9.1/ramp_1.9.1_Linux_arm64.tar.gz"
+      sha256 "d10ec82710763b543ecb72d6db0746ea3ecdb2683d8effdf2bcedb3109ce3e10"
       def install
         bin.install "ramp"
       end
